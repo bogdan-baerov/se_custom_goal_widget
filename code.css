@@ -1,0 +1,38 @@
+* {
+    font-family: '{fontName}';
+  	font-weight: '{fontWeight}';
+  	padding:0;
+  	margin:0;
+}
+
+.main-container{
+	position: relative;
+  	height:65px;
+}
+.meter {
+  	display:block;
+    height: 10px;  /* Can be anything */
+    background: {{backgroundColor}};
+  	width:725px;
+  	position:absolute;
+  	bottom:0;
+}
+
+.meter > span {
+  	display:block;
+    height: 100%;
+    background-color: {{barColor}};
+    overflow: hidden;
+}
+.title{
+    font-size:{{titleSize}}px;
+    color:{{titleColor}};
+  	display: block;
+  	float:left;
+}
+#goalPercent{
+    color:{{goalColor}};
+  	font-size:{{goalSize}}px;
+  	display: block;
+  	float: right;
+}
